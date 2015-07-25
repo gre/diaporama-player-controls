@@ -1,0 +1,25 @@
+{
+  "name": "diaporama-player-controls",
+  "version": "1.0.0",
+  "description": "Player Controls for Diaporama",
+  "main": "PlayerControls.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gre/diaporama-player-controls.git"
+  },
+  "keywords": [
+    "diaporama",
+    "player",
+    "controls"
+  ],
+  "author": "Gaëtan Renaudeau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gre/diaporama-player-controls/issues"
+  },
+  "homepage": "https://github.com/gre/diaporama-player-controls#readme",
+  "dependencies": {
+    "diaporama": "^2.0.0",
+    "react": "^0.13.3"
+  }
+}
