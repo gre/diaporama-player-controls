@@ -30,7 +30,7 @@
   "homepage": "https://github.com/gre/diaporama-player-controls#readme",
   "dependencies": {
     "babelify": "^6.1.3",
-    "diaporama": "^2.0.0",
+    "diaporama": "^2.1.0",
     "react": "^0.13.3"
   }
 }
