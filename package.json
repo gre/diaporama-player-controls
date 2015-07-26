@@ -1,6 +1,6 @@
 {
   "name": "diaporama-player-controls",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Player Controls for Diaporama",
   "main": "PlayerControls.js",
   "babel": {
