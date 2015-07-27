@@ -114,11 +114,16 @@ const defaultProps = {
     },
     progressSlide: {
       color: "#fff",
-      fontWeight: "bold"
+      fontWeight: "bold",
+      display: "inline-block",
+      minWidth: "20px",
+      textAlign: "right"
     },
     progressSlides: {
       paddingLeft: "4px",
-      color: "#aaa"
+      color: "#aaa",
+      display: "inline-block",
+      minWidth: "20px"
     },
     textButton: {
       textTransform: "uppercase",
@@ -229,7 +234,7 @@ class PlayerControls extends Component {
       timeBuffered,
       currentRenderState
     } = diaporama;
-    const slides = data.timeline.length;
+    const slides = data && data.timeline.length || 0;
 
     const progressContainer = {
       ...styles.progressContainer,
@@ -279,14 +284,14 @@ class PlayerControls extends Component {
         }
         {!disablePlayback &&
         <div style={styles.buttonsSection}>
-          <Button onClick={() => diaporama.playbackRate /= 2} icon="backward" />
+          <Button onClick={() => { diaporama.playbackRate /= 2; this.forceUpdate(); }} icon="backward" />
           <span style={styles.playbackRate}>{0.001 * Math.round(playbackRate * 1000)}x</span>
-          <Button onClick={() => diaporama.playbackRate *= 2} icon="forward" />
+          <Button onClick={() => { diaporama.playbackRate *= 2; this.forceUpdate(); }} icon="forward" />
         </div>
         }
         {!disableLoop &&
         <div style={styles.buttonsRight}>
-          <Button onClick={() => diaporama.loop = !loop} togglable active={loop}>
+          <Button onClick={() => { diaporama.loop = !loop; this.forceUpdate(); }} togglable active={loop}>
             <span style={styles.textButton}>loop</span>
           </Button>
         </div>

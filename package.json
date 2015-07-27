@@ -34,5 +34,9 @@
   "dependencies": {
     "babelify": "^6.1.3",
     "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "eslint": "git://github.com/gre/eslint.git",
+    "eslint-plugin-react": "^3.0.0"
   }
 }
