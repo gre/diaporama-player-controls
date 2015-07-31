@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/gre/diaporama-player-controls#readme",
   "peerDependencies": {
-    "diaporama": "^2.1.0"
+    "diaporama": "2.x"
   },
   "dependencies": {
     "babelify": "^6.1.3",
