@@ -161,7 +161,7 @@ class PlayerControls extends Component {
     super(props);
     const { diaporama } = props;
     const refresh = () => this.forceUpdate();
-    ["progress","destroy","error","play","pause","render"]
+    ["progress","destroy","error","play","pause","render","data"]
       .forEach(e => diaporama.on(e, refresh));
 
     this.onKeydown = this.onKeydown.bind(this);
